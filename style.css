@@ -332,9 +332,8 @@ i{
         font-size: 26px;
     }
     .cabecera__hp li:hover{
-        transform: scale(2);
+        transform: scale(1.5);
     }
-
     .serigrafia h2{
         font-size: 50px;
     }
