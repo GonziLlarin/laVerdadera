@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: inhabits;
+    src: url(/fuentes/Inhabits-GOWOm.ttf);
+}
+@font-face {
+    font-family: kiwi;
+    src: url(/fuentes/KiwiDays-Yz8o4.ttf);
+}
+@font-face {
+    font-family: bloopers;
+    src: url(/fuentes/Bloopers-ZVPKz.ttf);
+}
+
+
+/** <-- INDEX --> **/
+/** <-- header --> **/
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 25px
+}
+.cabecera__imagen{
+    padding-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+.cabecera h1{
+    display: flex;
+    justify-content: center;
+    font-family: inhabits;
+    font-size: 35px;
+}
+
+.cabecera section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.cabecera__hp li a{
+    font-family: kiwi;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(105, 11, 11);
+}
+
+.cabecera__hp li{
+    color:green;
+    list-style: none;
+}
+
+/** Main **/
+
+.serigrafia{
+    display: flex;
+    flex-direction: column;
+    margin:15px 25px;
+}
+
+.serigrafia h2{
+    padding:15px;
+    text-align: center;
+    font-family: kiwi;
+    font-size: 20px;
+}
+
+.serigrafia p{
+    text-align: justify;
+    font-family: bloopers;
+}
+
+.emprendedor{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 25px -15px 25px;
+}
+
+.emprendedor h3{
+    text-align: justify;
+    font-family: kiwi;
+    font-size: 13px;
+}
+
+.emprendedor p{
+    padding:15px;
+    font-family: bloopers;
+}
+
+/** footer**/
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pie__lista{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.pie__lista__imagen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;    
+    list-style: none;
+    text-decoration: none;
+    color:rgb(105, 11, 11);
+    font-size: 13px;
+    font-family: kiwi;
+}
+
+.pie__lista__imagen__icon {
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+/** <-- INDEX --> **/
+
+/** <-- QUIENES SOMOS --> **/
+.somos{
+    display: flex;
+    flex-direction: column;
+}
+.somos h2{
+    align-self: center;
+    margin-bottom: 15px;
+    font-family: kiwi;
+}
+.somos__servicio{
+    text-align: justify;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-family: bloopers;
+}
+.somos__vida{
+    text-align: justify;
+    margin: 30px 40px;
+    font-size: 15px;
+    font-family: bloopers;
+}
+/** <-- QUIENES SOMOS --> **/
+
+
+/** <-- GALERIA --> **/
+
+.video{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 10px;
+}
+figcaption{
+    padding: 10px 0px;
+    font-family: kiwi;
+    font-size: 12px;
+}
+
+#conteItemsCarrousel{
+    height: 240px;
+    overflow: hidden;
+}
+
+.carrousel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.flechasCarrousel{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 70;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+i{
+    color: rgb(255, 196, 0);
+}
+
+#carrousel-7{
+    object-fit:fill
+}
+
+/** <-- GALERIA --> **/
+
+
+
+/** <-- CONTACTO --> **/
+.contacto{
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+.contacto h2{
+    text-align: justify;
+    margin-top:60px;
+    font-size: 30px;
+    font-family: bloopers;
+}
+.contacto h3{
+    text-align: left;
+    font-size: 25px;
+    font-family: bloopers;
+}
+.contacto p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top:15px;
+    text-align: center;
+    font-size: 30px;
+}
+.contacto__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.iconosContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.iconosContacto a{
+    padding: 15px;
+}
+
+
+/** <-- CONTACTO --> **/
+* body{
+    background: url(/img/fondo/reggae4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+@keyframes fondo {
+    30%{
+        background-image: url(/img/fondo/simpsons.jpg);
+    }
+    55%{
+        background-image: url(/img/fondo/squad.jpg);
+    }
+    80%{
+        background-image: url(/img/fondo/beer.jpg);
+    }
+}
