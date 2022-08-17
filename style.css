@@ -55,7 +55,6 @@
 }
 
 .cabecera__hp li{
-    color:green;
     list-style: none;
 }
 
@@ -165,7 +164,9 @@ figcaption{
     font-family: kiwi;
     font-size: 12px;
 }
-
+.galeriaTexto{
+    display: none;
+}
 #conteItemsCarrousel{
     height: 240px;
     overflow: hidden;
@@ -276,4 +277,155 @@ i{
     80%{
         background-image: url(/img/fondo/beer.jpg);
     }
+}
+
+/* MEDIAS CUERI */
+
+@media screen and (min-width: 1000px) {
+    body{
+        background: brown;
+    }
+    @keyframes fondo {
+        display: none;
+    }
+
+    /**  index **/
+    .cabecera{
+        flex-direction: row;
+        margin-top: 5px;
+        margin-right:20px;
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+
+    .cabecera__imagen{
+        height: 70px;
+        width: 70px;
+
+    }
+    .cabecera h1{  
+        display:inline-flex; 
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        justify-content: flex-start;
+    }
+
+    .cabecera section{
+        margin-right: -45px;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 170px
+    }
+    .cabecera__hp li a{
+        font-size: 26px;
+    }
+    .cabecera__hp li:hover{
+        transform: scale(2);
+    }
+
+    .serigrafia h2{
+        font-size: 50px;
+    }
+
+    .serigrafia p{
+        padding: 60px;
+        font-size: 30px;
+        padding-top: 10px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .emprendedor h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .emprendedor p{
+        text-align: center;
+        padding: 60px;
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .pie__lista{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .pie__lista__imagen{
+        font-size: 30px;
+    }
+    .pie__lista__imagen__icon{
+        transform: scale(2);
+    }
+/** quienes somos**/
+
+    .somos h2{
+        font-size: 50px;
+    }
+    .somos__servicio{
+        margin-top: 15px;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .somos__vida{
+        font-size: 28px;
+        margin-top: 65px;
+        margin-right: 250px;
+        margin-left: 250px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+/** quienes somos**/
+
+/** galeria **/
+    main {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .video{
+        justify-content: center;
+        align-items: center;
+    }   
+    figcaption{
+        font-size: 24px;
+        text-align: left;
+        margin-left: -80px;
+    }
+    .galeriaTexto{
+        display: block;
+        margin:30px;
+        font-size: 24px;
+        font-family: kiwi;
+    }
+    #conteItemsCarrousel{
+        margin:50px 150px;
+        height: 700px;
+    }
+
+/** galeria **/
+
+/** contacto**/
+    .contacto h2{
+        text-align: center;
+        font-size: 45px;
+        margin-left: 60px;
+    }
+    .contacto h3{
+        margin-top: 150px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .contacto p{
+        font-size: 55px;
+    }
+
+/** contacto**/
+/* MEDIAS CUERI */
 }
