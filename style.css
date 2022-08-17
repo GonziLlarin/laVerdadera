@@ -259,7 +259,7 @@ i{
 
 /** <-- CONTACTO --> **/
 * body{
-    background: url(/img/fondo/reggae4.jpg) no-repeat center center fixed;
+    background: url('/img/fondo/reggae4.jpg') no-repeat center center fixed;
     background-size: cover;
     animation-name: fondo;
     animation-iteration-count: infinite;
@@ -268,12 +268,12 @@ i{
 
 @keyframes fondo {
     30%{
-        background-image: url(/img/fondo/simpsons.jpg);
+        background-image: url('/img/fondo/simpsons.jpg');
     }
     55%{
-        background-image: url(/img/fondo/squad.jpg);
+        background-image: url('/img/fondo/squad.jpg');
     }
     80%{
-        background-image: url(/img/fondo/beer.jpg);
+        background-image: url('/img/fondo/beer.jpg');
     }
 }
