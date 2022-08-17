@@ -231,8 +231,11 @@ i{
     font-family: bloopers;
 }
 .contacto p{
+    justify-content: center;
+    align-self: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top:15px;
+    margin-left: 0px;
     text-align: center;
     font-size: 30px;
 }
@@ -243,13 +246,22 @@ i{
     align-items: center;
     margin: 30px;
 }
+#iconoContacto{
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    justify-content: space-between;
+    margin:auto auto;
+    padding:10px;
+    transform: scale(2);
+}
 
 .iconosContacto{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    
     padding: 30px;
 }
 
@@ -282,12 +294,12 @@ i{
 /* MEDIAS CUERI */
 
 @media screen and (min-width: 1000px) {
-    body{
+    /* body{
         background: brown;
     }
     @keyframes fondo {
         display: none;
-    }
+    } */
 
     /**  index **/
     .cabecera{
@@ -354,7 +366,7 @@ i{
         font-size: 30px;
     }
     .pie__lista__imagen__icon{
-        transform: scale(2);
+        transform: scale(1.5);
     }
 /** quienes somos**/
 
@@ -425,7 +437,9 @@ i{
     .contacto p{
         font-size: 55px;
     }
-
+    .contacto__redes:hover{
+        transform: scale(2);
+    }
 /** contacto**/
 /* MEDIAS CUERI */
 }
